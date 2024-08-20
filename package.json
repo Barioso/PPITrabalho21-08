@@ -1,0 +1,20 @@
+{
+  "name": "ppitrabalho21-08",
+  "version": "1.0.0",
+  "description": "trabalho de PPI M1",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Barioso/PPITrabalho21-08.git"
+  },
+  "author": "Diogo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Barioso/PPITrabalho21-08/issues"
+  },
+  "homepage": "https://github.com/Barioso/PPITrabalho21-08#readme"
+}
