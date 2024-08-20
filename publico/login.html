@@ -19,13 +19,6 @@
                         MusiFest
                     </h1>
                 </div>
-                <nav>
-                    <ul>
-                        <li><a href="páginainicial.html">Página Inicial</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="páginainicial.html">Sair</a></li>
-                    </ul>
-                </nav>
             </div>
             <div class="menu_direita">
                 <form class="d-flex" role="search">
@@ -38,45 +31,21 @@
 
         <div class="container mt-2">
             <div class="card">
-                <form id="registrationForm" class="meuform" novalidate>
+                <form method="post" action="/login">
                     <div class="row">
                         <div class="col-md-6">
                             <div class="mb-3">
-                                <label for="nome" class="form-label"> <i class="bi bi-file-person"></i> Nome</label>
-                                <input type="text" class="form-control" id="nome" name="nome" autofocus="true" required placeholder="Digite seu nome" />
-                                <div class="invalid-feedback">Por favor, informe um nome</div>
+                                <label for="usuario" class="form-label"> <i class="bi bi-file-person"></i> Usuário</label>
+                                <input type="text" class="form-control" id="usuario" name="usuario" required/>
                             </div>
                             
                             <div class="mb-3">
-                                <label for="sobrenome" class="form-label"> <i class="bi bi-file-person"></i> Sobrenome</label>
-                                <input type="text" class="form-control" id="sobrenome" autofocus="true" required placeholder="Digite seu sobrenome" />
-                                <div class="invalid-feedback">Por favor, informe um sobrenome</div>
+                                <label for="senha" class="form-label"> <i class="bi bi-file-person"></i> Sobrenome</label>
+                                <input type="password" class="form-control" id="senha" name="senha" required/>
                             </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label"> <i class="bi bi-envelope"></i> E-mail</label>
-                                <input type="email" class="form-control" id="email" placeholder="Ex: nome@hotmail.com" required maxlength="50" />
-                                <div class="invalid-feedback">Por favor, informe um e-mail válido</div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="cpf" class="form-label"> <i class="bi bi-file-earmark-person"></i> CPF</label>
-                                <input type="text" class="form-control" id="cpf" maxlength="14" placeholder="Ex: 111.111.111-11" required />
-                                <div class="invalid-feedback">Por favor, informe um CPF válido</div>
-                            </div>
-    
-                            <div class="mb-3">
-                                <label for="banda-nome" class="form-label">Número de telefone</label>
-                                <input type="text" class="form-control" id="telefone" autofocus="true" required placeholder="Digite um telefone para contato" />
-                                <div class="invalid-feedback">Por favor, digite um número válido</div>
-                            </div>
-    
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="dt" class="form-label"><i class="bi bi-calendar" required></i> Data de nascimento (opcional)</label>
-                                    <input type="date" class="form-control" id="dt" />
-                                </div>
-                            </div>
+                            
                             <button id="cancelar" class="botao_cancelar" type="button" onclick="window.location.reload()">Cancelar</button>
-                            <button type="submit" class="botao" >Cadastrar</button>
+                            <button type="submit" class="botao" >Entrar</button>
                         </div>
                         <div class="col-md-6">
                             <div class="mb-3">

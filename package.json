@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Barioso/PPITrabalho21-08#readme",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
   }
 }
