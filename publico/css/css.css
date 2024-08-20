@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+body{
+    align-content: center;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    height: 85px;
+}
+
+.menu_esquerda{
+    display: flex;
+    gap: 50px;
+}
+
+.menu_direita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: x-large;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+}
+
+.container{
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: 90vh;
+    border-radius: 12px;
+    padding: 2rem 2rem;
+    vertical-align: middle;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.sel-imagem{
+    max-width: 500px;
+}
+
+.sel-imagem img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.lado-esquerdo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.lado-direito{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lado-direito h2{
+    color: #2192FF;
+}
+div.quantidade {
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+div.data_compra{
+    width: 49%;
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.botao{
+    border-radius: 7px;
+    width: 50%;
+}
+
+.botao:hover{
+    background-color: blueviolet;
+}
+
+.card-body a{
+    border-radius: 7px;
+    width: 30%;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-link:hover{
+    background-color: blueviolet;
+}
+

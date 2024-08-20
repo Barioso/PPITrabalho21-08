@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival de Música</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="csslogin.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <div class="menu_esquerda">
+                <div class="logo">
+                    <h1 id="paginainicial">
+                        MusiFest
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="páginainicial.html">Página Inicial</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="páginainicial.html">Sair</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="menu_direita">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="container mt-2">
+            <div class="card">
+                <form id="registrationForm" class="meuform" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label"> <i class="bi bi-file-person"></i> Nome</label>
+                                <input type="text" class="form-control" id="nome" name="nome" autofocus="true" required placeholder="Digite seu nome" />
+                                <div class="invalid-feedback">Por favor, informe um nome</div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="sobrenome" class="form-label"> <i class="bi bi-file-person"></i> Sobrenome</label>
+                                <input type="text" class="form-control" id="sobrenome" autofocus="true" required placeholder="Digite seu sobrenome" />
+                                <div class="invalid-feedback">Por favor, informe um sobrenome</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label"> <i class="bi bi-envelope"></i> E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="Ex: nome@hotmail.com" required maxlength="50" />
+                                <div class="invalid-feedback">Por favor, informe um e-mail válido</div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="cpf" class="form-label"> <i class="bi bi-file-earmark-person"></i> CPF</label>
+                                <input type="text" class="form-control" id="cpf" maxlength="14" placeholder="Ex: 111.111.111-11" required />
+                                <div class="invalid-feedback">Por favor, informe um CPF válido</div>
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="banda-nome" class="form-label">Número de telefone</label>
+                                <input type="text" class="form-control" id="telefone" autofocus="true" required placeholder="Digite um telefone para contato" />
+                                <div class="invalid-feedback">Por favor, digite um número válido</div>
+                            </div>
+    
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="dt" class="form-label"><i class="bi bi-calendar" required></i> Data de nascimento (opcional)</label>
+                                    <input type="date" class="form-control" id="dt" />
+                                </div>
+                            </div>
+                            <button id="cancelar" class="botao_cancelar" type="button" onclick="window.location.reload()">Cancelar</button>
+                            <button type="submit" class="botao" >Cadastrar</button>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <img src="assets\pngtree-music-logo-png-image_6389182.png" alt="logo">
+                            </div>
+                        </div>    
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+    </html>
+    

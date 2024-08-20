@@ -1,0 +1,60 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+    height: 85px;
+}
+
+.menu_esquerda{
+    display: flex;
+    gap: 50px;
+}
+
+.menu_direita{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: x-large;
+}
+nav ul li a{
+    text-decoration: none;
+    color: hsl(219, 9%, 45%);
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.card img{
+    width: 110%;
+}
+
+.botao{
+    padding: 10px;
+    border-color: transparent;
+    background-color: rgb(108, 18, 135);
+    border-radius: 7px;
+    display: inline-block;
+}
+
+.botao_cancelar{
+    padding: 10px;
+    border-color: transparent;
+    background-color: rgb(200, 4, 4);
+    border-radius: 7px;
+    display: inline-block;
+}
+
